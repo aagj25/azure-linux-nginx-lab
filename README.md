@@ -2,7 +2,6 @@
 
 Projeto prático de implementação de servidor web utilizando Linux (Ubuntu Server) e Nginx em ambiente cloud.
 
----
 
 ## 📌 Objetivo
 
@@ -13,8 +12,6 @@ Desenvolver experiência prática em:
 * Publicação de aplicação web
 * Configuração básica de rede
 
----
-
 ## ☁️ Infraestrutura
 
 * Máquina Virtual Linux (Ubuntu Server)
@@ -22,14 +19,7 @@ Desenvolver experiência prática em:
 * Acesso remoto via SSH
 * Liberação de porta HTTP (80)
 
----
-
-## ⚙️ Tecnologias utilizadas
-
-* Microsoft Azure
-* Linux (Ubuntu Server)
-* Nginx
-* SSH
+![Resource Group](images/1-resource_group.png)
 
 ---
 
@@ -41,62 +31,43 @@ Desenvolver experiência prática em:
 * Definição de usuário administrador
 * Configuração de acesso via SSH
 
+![VM Config](images/2-vm_configs.png)
+
 ---
 
 ### 2. Acesso ao servidor
 
-```bash
-ssh usuario@ip-da-vm
-```
+![SSH](images/3-connect_ssh.png)
 
 ---
 
 ### 3. Atualização do sistema
 
-```bash
-sudo apt update && sudo apt upgrade -y
-```
+![Update](images/4-update_server.png)
 
 ---
 
 ### 4. Instalação do Nginx
 
-```bash
-sudo apt install nginx -y
-```
+![Nginx Install](images/5-install_nginx.png)
 
 ---
 
 ### 5. Verificação do serviço
 
-```bash
-sudo systemctl status nginx
-```
+![Nginx Config](images/6-config_nginx.png)
 
 ---
 
-### 6. Liberação de porta
-
-* Configuração da porta 80 (HTTP) nas regras de rede da VM
-
----
-
-### 7. Teste de acesso
-
-Acessar via navegador:
-
-```
-http://IP-DA-VM
-```
-
----
-
-### 8. Customização da página
+### 6. Teste de acesso e Customização da página
 
 ```bash
 sudo nano /var/www/html/index.nginx-debian.html
 ```
 
+Acessar via navegador:
+
+![HTTP Test](images/7-test_http_server.png)
 
 ---
 
@@ -106,10 +77,4 @@ sudo nano /var/www/html/index.nginx-debian.html
 * Gerenciamento de serviços no Linux
 * Configuração de acesso remoto via SSH
 * Noções de rede e liberação de portas
-
----
-
-## 💼 Aplicação profissional
-
-Este projeto simula a implementação de um servidor web em ambiente cloud, demonstrando conhecimentos em infraestrutura, Linux e publicação de serviços.
 
